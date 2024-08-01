@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    
+</style>
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar"> 
+            <a href='index.html'>LOGIN PAGE</a>
+            <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'">Login</button>
+        </div>
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='Button-box'>
+                    <button type='button' onclick='showLogin()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='showRegister()' class='toggle-btn'>Register</button>
+                </div>
+                <div id='login' class='input-group-login active'>
+                    <input type='text' class='input-filed' placeholder='Email Id' required>
+                    <input type='password' class='input-filed' placeholder='Enter Password' required><br>
+                    <input type='checkbox' class='check-box'><span>Remember password</span>
+                    <button type='submit' class='submit-btn'>Login</button>
+                </div>
+                <div id='register' class='input-group-register'>
+                    <input type='text' class='input-filed' placeholder='First Name' required>
+                    <input type='text' class='input-filed' placeholder='Last Name' required>
+                    <input type='email' class='input-filed' placeholder='Email Id' required>
+                    <input type='password' class='input-filed' placeholder='Enter Password' required>
+                    <input type='password' class='input-filed' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <script>
+        function showLogin() {
+            document.getElementById('login').classList.add('active');
+            document.getElementById('register').classList.remove('active');
+        }
+
+        function showRegister() {
+            document.getElementById('login').classList.remove('active');
+            document.getElementById('register').classList.add('active');
+        }
+
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+	background-image: url('images.webp'); /* Ensure the image path is correct */
+	background-size: cover;
+	background-position: center;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.full-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 20px;
+}
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.navbar a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 18px;
+}
+.navbar button {
+	padding: 10px;
+	border: none;
+	background-color: #555;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+}
+.navbar button:hover {
+	background-color: #777777ea;
+}
+.login-page {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	padding: 20px;
+	box-sizing: border-box;
+}
+.form-box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.input-group-login, .input-group-register {
+	display: none;
+}
+.input-group-login.active, .input-group-register.active {
+	display: block;
+}
+.input-filed {
+	width: calc(100% - 20px);
+	padding: 10px;
+	margin: 10px auto;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.submit-btn {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background-color: #f192d5;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.submit-btn:hover {
+	background-color: #f192d5;
+}
+.check-box {
+	margin-right: 5px;
+}
+.Button-box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.toggle-btn {
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	background-color: #66c2ec;
+	color: white;
+	border-radius: 5px;
+	flex: 1;
+	margin: 0 5px;
+}
+.toggle-btn:hover {
+	background-color: #66c2ec;
+}
